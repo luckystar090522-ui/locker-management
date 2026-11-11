@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOCKER MANAGEMENT</title>
+  
+  <!-- Google Fonts (Sarabun) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- เชื่อมโยงกับไฟล์ CSS -->
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>LOCKER MANAGEMENT</h1>
+      <span class="badge-admin">Admin System</span>
+    </div>
+
+    <!-- Top Summary Cards -->
+<!-- Top Summary Cards -->
+    <div class="summary-grid">
+      
+      <!-- 1. การ์ดโรงอาหาร -->
+      <a href="canteen.html" style="text-decoration: none; display: block;">
+        <div class="card card-blue" style="cursor: pointer;">
+          <div class="card-title">โรงอาหาร</div>
+          <div class="card-number">117</div>
+          <div class="card-subtitle">ล็อกเกอร์</div>
+        </div>
+      </a>
+
+       <!-- 2. การ์ดบรรจุ -->
+    <a href="packing-layout.html" style="text-decoration: none; display: block;">
+       <div class="card card-green" style="cursor: pointer;">
+        <div class="card-title">บรรจุ</div>
+        <div class="card-number">99</div>
+        <div class="card-subtitle">ล็อกเกอร์</div>
+    </div>
+</a>
+
+      <!-- 3. การ์ดผลิต -->
+    <a href="production-layout.html" style="text-type: none; text-decoration: none; display: block;">
+        <div class="card card-orange" style="cursor: pointer;">
+            <div class="card-title">ผลิต</div>
+            <div class="card-number">66</div>
+            <div class="card-subtitle">ล็อกเกอร์</div>
+        </div>
+    </a>
+</div>
+
+    <!-- Locker Status Grid -->
+    <div class="section-title">ตัวอย่างหน้าจอตู้ล็อกเกอร์</div>
+    
+    <div class="locker-grid">
+      <!-- Row 1 -->
+      <div class="locker-box vacant">
+        <div class="locker-number">001</div>
+        <div class="locker-status">ว่าง</div>
+      </div>
+      <div class="locker-box occupied">
+        <div class="locker-number">002</div>
+        <div class="locker-status">มีผู้ใช้</div>
+      </div>
+      <div class="locker-box vacant">
+        <div class="locker-number">003</div>
+        <div class="locker-status">ว่าง</div>
+      </div>
+      <div class="locker-box vacant">
+        <div class="locker-number">004</div>
+        <div class="locker-status">ว่าง</div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="locker-box occupied">
+        <div class="locker-number">005</div>
+        <div class="locker-status">มีผู้ใช้</div>
+      </div>
+      <div class="locker-box vacant">
+        <div class="locker-number">006</div>
+        <div class="locker-status">ว่าง</div>
+      </div>
+      <div class="locker-box vacant">
+        <div class="locker-number">007</div>
+        <div class="locker-status">ว่าง</div>
+      </div>
+      <div class="locker-box vacant">
+        <div class="locker-number">008</div>
+        <div class="locker-status">ว่าง</div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="locker-box vacant">
+        <div class="locker-number">009</div>
+        <div class="locker-status">ว่าง</div>
+      </div>
+      <div class="locker-box vacant">
+        <div class="locker-number">010</div>
+        <div class="locker-status">ว่าง</div>
+      </div>
+      <div class="locker-box vacant">
+        <div class="locker-number">011</div>
+        <div class="locker-status">ว่าง</div>
+      </div>
+      <div class="locker-box vacant">
+        <div class="locker-number">012</div>
+        <div class="locker-status">ว่าง</div>
+      </div>
+    </div>
+
+    <!-- Footer Legend -->
+    <div class="footer-legend">
+      ตัวอย่างการแสดงสถานะตู้: สีเขียวคือมีพนักงานใช้งาน สีเทาคือว่าง
+    </div>
+  </div>
+
+</body>
+</html>

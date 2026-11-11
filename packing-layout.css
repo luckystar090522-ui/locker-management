@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Sarabun', sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  padding: 24px;
+  color: #1e293b;
+}
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header & Back Button */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.btn-back {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-back:hover {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.page-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Wrapper สำหรับวางตารางขนานกัน */
+.zones-wrapper {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+/* โครงสร้างแต่ละโซน */
+.zone-block {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+}
+
+/* Header ของแต่ละโซนตามภาพต้นฉบับ */
+.zone-header {
+  text-align: center;
+  font-weight: 600;
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid #000000;
+  border-bottom: none;
+}
+
+.header-packing-1 {
+  background-color: #d1fae5; /* เขียวพาสเทล */
+}
+
+.header-packing-2 {
+  background-color: #fce7f3; /* ชมพูอ่อน */
+}
+
+.header-packing-3 {
+  background-color: #cffafe; /* ฟ้าอ่อน */
+}
+
+/* Grid ของช่องตู้ */
+.locker-grid {
+  display: grid;
+  border: 1px solid #000000;
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* แต่ละช่อง (Cell) */
+.cell {
+  border: 1px solid #000000;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  margin: -0.5px; /* ป้องกันเส้นขอบทับซ้อนกันแล้วหนา */
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.cell:hover {
+  opacity: 0.8;
+}
+
+/* โทนสีพื้นหลังช่องตู้ตามภาพต้นฉบับ */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-yellow {
+  background-color: #fde047; /* เหลือง */
+}
+
+.bg-light-blue {
+  background-color: #bae6fd; /* ฟ้าอ่อน */
+}
